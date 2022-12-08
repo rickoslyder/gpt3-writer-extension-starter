@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="key_needed">
+      <p>To get started, add your OpenAI API Key!</p>
+      <input id="key_input" />
+      <button id="save_key_button">Add key</button>
+    </div>
+    <div id="key_entered">
+      <p>You entered your OpenAI API Key.</p>
+      <button id="change_key_button">Change key</button>
+    </div>
+    <div id="tenants_needed">
+      <p id="no_tenants_yet">
+        It looks like you haven't saved any tenant details yet - let's change
+        that!
+      </p>
+      <form class="tenantInputForm" id="tenantInputForm" color="white">
+        <div>
+          <h3>Tenant Details</h3>
+          <div>
+            <label for="name">
+              Name:
+              <input type="text" id="name" name="name" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="age">
+              Age:
+              <input type="number" id="age" name="age" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="gender">
+              Gender:
+              <select name="gender" id="gender" value="">
+                <option></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Non-binary</option>
+              </select>
+            </label>
+          </div>
+          <br />
+          <div>
+            <label for="smoker">
+              Do you smoke?
+              <select name="smoker" id="smoker" value="">
+                <option></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label for="pets">
+              How many pets?
+              <input type="number" id="pets" name="pets" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="kids">
+              How many kids?
+              <input type="number" id="pets" name="kids" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="pregnant">
+              Pregnant?
+              <select name="pregnant" id="pregnant" value="">
+                <option></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+          </div>
+          <br />
+          <div>
+            <label for="occupation">
+              Occupation:
+              <select name="occupation" id="occupation" value="">
+                <option></option>
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label for="employer">
+              Employer name:
+              <input
+                type="text"
+                id="employer"
+                name="employer"
+                value=""
+                placeholder="N/A if none"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="jobTitle">
+              Job title:
+              <input
+                type="text"
+                placeholder="N/A if none"
+                id="jobTitle"
+                name="jobTitle"
+                value=""
+              />
+            </label>
+          </div>
+          <div>
+            <label for="income">
+              Yearly income (£):
+              <input type="number" id="income" name="income" value="" />
+            </label>
+          </div>
+          <br />
+          <button id="save_tenant_button">Add Tenant</button>
+        </div>
+      </form>
+      <br />
+    </div>
+    <div id="tenants_entered">
+      <p id="tenantCount"></p>
+      <button id="add-tenant-btn">Add Another Tenant..</button>
+      <div id="existing-tenants">
+        <p>No existing tenants!</p>
+      </div>
+    <p>Now you can:
+        <ul>
+            <li>go onto any page,</li>
+            <li>select an editable text field,</li>
+            <li>and voila! We'll automatically generate your personalised landlord letter for you.</li>
+        </ul>
+    </p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+<!-- // If tenant group already exists + more than one person added
+    <div className="relationship-dropdown">
+      <label>
+        <b>How do you know each other?</b>
+        <select>
+          <option value="professional sharers">
+            Professional Sharers
+          </option>
+          <option value="students">Students</option>
+          <option value="platonic friends (not in a relationship)">
+            Friends
+          </option>
+          <option value="siblings">Siblings</option>
+          <option value="cousins">Cousins</option>
+          <option value="in a relationship">In a Relationship</option>
+          <option value="married">Married</option>
+        </select>
+      </label>
+    </div> -->
